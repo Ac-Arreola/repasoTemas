@@ -15,6 +15,7 @@ class validadorLibro extends FormRequest
         return true;
     }
 
+    
     /**
      * Get the validation rules that apply to the request.
      *
@@ -23,12 +24,12 @@ class validadorLibro extends FormRequest
     public function rules()
     {
         return [
-            'txtISBN'=>'required|min:13',
+            'txtISBN'=>'required|numeric|min:13',
             'txtTitulo'=>'required',
             'txtAutor'=>'required',
-            'txtPags'=>'required',
+            'txtPags'=>'required|numeric',
             'txtEditorial'=>'required',
-            'txtEmEditorial'=>'required',
+            'txtEmEditorial'=>'required|email',
 
         ];
     }

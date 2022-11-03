@@ -3,11 +3,11 @@
  @section('contenido')
  
  <h1 class="text-center mt-4 display-2 fw-bold font-monospace"> ✧ Página principal ✧ </h1>
- <h2 class="text-center font-monospace mt-3">  📚 Biblioteca LeoSan_Juan  📚 </h2>
- <h3 class="text-center font-monospace fw-bold text-muted mt-4" > <em> Noticias literarias </em></h3>
+ <h2 class="text-center font-monospace mt-3 text-muted mt-4 "> <em> 📚 Biblioteca LeoSan_Juan  📚 </em></h2>
  
- <img src="img\banner.png">
-
+ <div class="text-center">
+ <img src="{{asset('img\bannerWbg.png')}}" width="80%" height="300" role="img" width="100%" height="100%" >
+</div>
     <div class="album py-5 bg-light">
         <div class="container">
     

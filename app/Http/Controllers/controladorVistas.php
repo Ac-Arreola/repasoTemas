@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\validadorLibro;
+
 class controladorVistas extends Controller
 {
+
     public function procesarLibro(validadorLibro $req){
        
        return redirect('registro')->with('confirmacion','Procesado correctamente');
     }
 
+     
     public function showMain(){
 
         return view('principal');
@@ -22,4 +25,5 @@ class controladorVistas extends Controller
     public function showWelcome(){
         return view('welcome');
     }
+
 }

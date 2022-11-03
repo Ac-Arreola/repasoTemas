@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\controladorVistas;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,13 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', [controladorVistas::class,'showWelcome']);
 Route::get('Main', [controladorVistas::class,'showMain'])->name('apodoMain');
 Route::get('Registration', [controladorVistas::class,'showRegistrar'])->name('apodoReg');
 //ruta para envio post
-Route::post('guardarRegistro',[controladorVistas::class,'procesarLibro']);
-
-
+//Route::view('saveReg',[controladorVistas::class,'procesarLibro']);
+Route::put('guardarRegistro','controladorVistas')->name('SaveLib');
+//Route::post('SaveLib',[controladorVistas::class,'procesarLibro']);
 
 
  

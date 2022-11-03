@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +10,7 @@
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       </head>
 
-      <body class="bg-light">
+      <body style="background: rgb(191, 226, 228)">
                       <!-- INICIA NAVBAR -->
                       <nav class="navbar navbar-expand-lg navbar-light bg-info ">
                         <div class="container-fluid fw-bold font-monospace mt-2 mb-2">
@@ -35,11 +36,12 @@
           <!-- CDN BOOTSTRAP JS -->
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       
-          <footer class="main-footer mt-5">
-            <div class="alert alert-info" role="alert">
-              <em> Biblioteca LeoSan_Juan CopyRight® 03 Noviembre 2022 </em>
-          
-            </div>
-          </footer>
+         <footer class="main-footer mt-5" width=100% >
+        <div class="alert alert-dark" role="alert" style="background: cadetblue">
+          <em> Biblioteca LeoSan_Juan CopyRight® 03 Noviembre 2022 </em>
+      
+        </div>
+      </footer>  
        </body>
-
+     
+       </html>
