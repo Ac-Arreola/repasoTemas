@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\controladorVistas;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +13,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [controladorVistas::class,'showWelcome']);
+Route::get('Main', [controladorVistas::class,'showMain'])->name('apodoMain');
+Route::get('Registration', [controladorVistas::class,'showRegistrar'])->name('apodoReg');
+//ruta para envio post
+Route::post('guardarRegistro',[controladorVistas::class,'procesarLibro']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+ 
