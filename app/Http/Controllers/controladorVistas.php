@@ -8,7 +8,9 @@ use App\Http\Requests\validadorLibro;
 class controladorVistas extends Controller
 {
 
-    public function procesarLibro(validadorLibro $req){
+  
+
+    public function saveLibro(validadorLibro $req){
        
        return redirect('registro')->with('confirmacion','Procesado correctamente');
     }

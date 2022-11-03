@@ -18,8 +18,8 @@ Route::get('Main', [controladorVistas::class,'showMain'])->name('apodoMain');
 Route::get('Registration', [controladorVistas::class,'showRegistrar'])->name('apodoReg');
 //ruta para envio post
 //Route::view('saveReg',[controladorVistas::class,'procesarLibro']);
-Route::put('guardarRegistro','controladorVistas')->name('SaveLib');
-//Route::post('SaveLib',[controladorVistas::class,'procesarLibro']);
+Route::post('guardarRegistro',[controladorVistas::class,'saveLibro']);
+//Route::get('SaveLib',[controladorVistas::class,'procesarLibro']);
 
 
  

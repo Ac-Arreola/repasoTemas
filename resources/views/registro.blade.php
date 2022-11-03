@@ -7,7 +7,7 @@
  {!!
      "<script>
      Swal.fire(
-     'Todo correcto :'
+     'Todo correcto :',
      'Libro “xxxxxx” guardado',
      'success'
      )
@@ -21,7 +21,7 @@
  @foreach ($errors->all() as $error) 
 
  <div class="alert alert-primary alert-dismissible fade show mt-3" role="alert">
-  <strong>{{ $error }}</strong>
+  <strong> {{ $error }} </strong>
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 @endforeach
@@ -35,11 +35,11 @@
     </div>
   </div>
   <div class="container mt-2 mb-2">
-    <form class="m-4" method="POST" action="SaveLib"
-    >
+    <form class="m-4" method="POST" action="guardarRegistro">
       <!-- <form class="m-4" method="POST" action="guardarRegistro"> --> 
-      @csrf
-      @method('put')
+     
+        @csrf
+
   
       <p><em> De favor, rellena lo que se te pide . </em></p>
       <div class="mb-3">
@@ -112,7 +112,7 @@
 
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
       
-        <button  class="btn btn-lg btn-outline-info  mb-2 mt-2">Enviar</button>
+        <button type="submit" class="btn btn-lg btn-outline-info  mb-2 mt-2">Enviar</button>
 
       </div>
       
